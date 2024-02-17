@@ -1,4 +1,4 @@
-num = 20
+num = 21
 if num.even?
     puts "even"
 else
