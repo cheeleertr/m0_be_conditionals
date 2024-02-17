@@ -22,24 +22,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts "Is number_teachers less than number_students?", number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts "Is number_teachers equal to string_teachers?", number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts "Is number_students greater than or equal to 21?", number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts "Is number_students less than or equal to 20?", number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts "Is number_students less than or equal to 21?", number_students <= 21
 # this should print: true
 
 
@@ -54,21 +61,26 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+"Checks if 4 is less than 9. Returns 'true'."
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+"Declares variable 'books' and assigns it value of 3. Checks if 4 is less than books. Returns 'false'."
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+"Declares variable 'friends' and assigns it value of 6. Declares variable 'siblings' and assigns it value of 2
+Checks if 'friends' is greater than 'siblings'. Returns true."
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
-
+"Declares variable 'attendees' and assigns it value of 9. Declares variable 'meals' and assigns it value of 8
+Checks if 'attendees' is not equal to 'meals'. Returns true."
 
 #-------------------
 # PART 3: Logical Operators
@@ -90,15 +102,23 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+loves_to_play &&  is_a_puppy
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
 # ANSWER:
+"The last line gave the error:
+
+```comparisons.rb:114:in `<main>': undefined local variable or method `is_a_puppy' for main:Object (NameError)
+loves_to_play &&  is_a_puppy```
+
+ This was because the variable 'is_a_puppy' was not defined so it had nothing to compare the first variable with.
+I would have to define 'is_a_puppy' to be able to make the code work."
